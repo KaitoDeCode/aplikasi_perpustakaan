@@ -7,14 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using aplikasi_perpustakaan.utils;
+using MySql.Data.MySqlClient;
 
 namespace aplikasi_perpustakaan
 {
     public partial class Form1 : Form
     {
+ 
         public Form1()
         {
             InitializeComponent();
+            Connection server = new Connection();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

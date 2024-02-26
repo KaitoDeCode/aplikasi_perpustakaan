@@ -26,15 +26,13 @@ namespace aplikasi_perpustakaan.utils
                 string conn = "server=localhost;uid=root;pwd='';database=perpustakaan_db";
                 this.conn.ConnectionString = conn;
                 this.conn.Open();
-                //MessageBox.Show("Success connection", "success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Success connection", "success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void quer()
     }
 
 }
