@@ -47,7 +47,7 @@ namespace aplikasi_perpustakaan
                 cmd.Parameters.AddWithValue("@email", email);
                 cmd.Parameters.AddWithValue("@password", password);
                 MySqlDataReader reader = cmd.ExecuteReader();
-
+                
                 if (reader.HasRows)
                 {
                     MessageBox.Show("Berhasil login", "success", MessageBoxButtons.OK, MessageBoxIcon.Information);
