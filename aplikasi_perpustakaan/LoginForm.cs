@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using aplikasi_perpustakaan.screen;
 using aplikasi_perpustakaan.utils;
 using MySql.Data.MySqlClient;
 
@@ -50,6 +51,9 @@ namespace aplikasi_perpustakaan
                 if (reader.HasRows)
                 {
                     MessageBox.Show("Berhasil login", "success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.Show();
+                    this.Hide();
                     reader.Close();
                 }
                 else
@@ -64,5 +68,10 @@ namespace aplikasi_perpustakaan
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            email.Text = "";
+            password.Text = "";
+        }
     }
 }
