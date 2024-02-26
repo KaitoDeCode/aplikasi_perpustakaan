@@ -10,28 +10,31 @@ using System.Windows.Forms;
 
 namespace aplikasi_perpustakaan.screen
 {
-    public partial class Dashboard : Form
+    public partial class Peminjam : Form
     {
-        public Dashboard()
+        public Peminjam()
         {
             InitializeComponent();
         }
 
-        private void Dashboard_Load(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            Peminjam peminjam = new Peminjam();
-            peminjam.Show();
-            this.Hide();
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

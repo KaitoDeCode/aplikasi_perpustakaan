@@ -113,6 +113,12 @@
     <Compile Include="screen\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="screen\Peminjam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen\Peminjam.Designer.cs">
+      <DependentUpon>Peminjam.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +133,9 @@
     </Compile>
     <EmbeddedResource Include="screen\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen\Peminjam.resx">
+      <DependentUpon>Peminjam.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
