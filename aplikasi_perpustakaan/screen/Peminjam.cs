@@ -140,5 +140,19 @@ namespace aplikasi_perpustakaan.screen
                MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            inputNama.Text = "";
+            inputEmail.Text = "";
+            inputAlamat.Text = "";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
+        }
     }
 }
